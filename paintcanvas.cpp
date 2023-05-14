@@ -220,8 +220,8 @@ void PaintCanvas::resizeEvent(QResizeEvent *event)
 {
     if(width() > image.width() || height() > image.height())
     {
-        int newWidth = qMax(width() + 128, image.width());
-        int newHeight = qMax(height() + 128, image.height());
+        int newWidth = qMax(width() + 1920, image.width());
+        int newHeight = qMax(height() + 1080, image.height());
         resizeImage(&image, QSize(newWidth, newHeight));
         update();
     }
